@@ -12,7 +12,7 @@ https://github.com/habaneraa/condaac/assets/95517280/206f82fc-94a6-438f-85fd-0cb
 Step 1. Install Python application via [pipx](https://pipx.pypa.io/latest/)
 
 ```bash
-pipx install https://github.com/habaneraa/condaac.git
+pipx install git@github.com:habaneraa/condaac.git
 ```
 
 Step 2. Install script.
