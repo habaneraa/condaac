@@ -1,8 +1,11 @@
 # condaac
 
-## Introduction
-
 condaac is a CLI application that helps you to list and switch between your conda environments easily.
+
+<video width="85%" controls>
+  <source src="docs/terminal_demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 > [!NOTE]  
 > condaac currently does not support Windows as it relies on Linux shell script.
