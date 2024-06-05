@@ -2,8 +2,7 @@
 
 condaac is a CLI application that helps you to list and switch between your conda environments easily.
 
-<video width="85%" src="docs/terminal_demo.mp4" controls></video>
-
+https://github.com/habaneraa/condaac/assets/95517280/206f82fc-94a6-438f-85fd-0cb21acad73b
 
 > [!NOTE]  
 > condaac currently does not support Windows as it relies on Linux shell script.
