@@ -25,10 +25,10 @@ class CondaEnvSel(App):
             return Path(env_path).name
     
     def current_env_mark(self, env_name):
-        if self.conda_info['active_prefix_name'] == env_name:
-            return '|>'
-        else:
-            return '  '
+        # if self.conda_info['active_prefix_name'] == env_name:
+        #     return '|>'
+        # else:
+        return '  '
 
     def on_mount(self) -> None:
         max_env_name_len = max([len(n) for n in self.env_names])
