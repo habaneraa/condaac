@@ -6,7 +6,7 @@ import typer
 from condaac.install import install_command
 from condaac.list_envs import list_env_paths
 
-cli = typer.Typer()
+cli = typer.Typer(no_args_is_help=True)
 
 
 @cli.command(
@@ -28,7 +28,7 @@ def condaac_cli(
 
     if install:
         cmd = install_command(conda_info_path)
-        typer.echo("Please add the following command to your shell profile script:")
+        typer.echo("Please add the following command to your shell profile script (e.g. .bashrc, .zshrc):")
         typer.echo(" ")
         typer.echo("  " + cmd)
         typer.echo(" ")
@@ -55,8 +55,8 @@ def condaac_cli(
         from condaac.tui import CondaEnvSel
         app = CondaEnvSel(conda_info_dict)
         ret = app.run(inline=True)
-        if conda_info_dict.get('active_prefix') is None:
-            typer.echo('Warning: conda base environment is not activated!', err=True)
+        # if conda_info_dict.get('active_prefix') is None:
+        #     typer.echo('Warning: conda base environment is not activated!', err=True)
         if ret:
             typer.echo(ret, nl=False)
         exit(0)
