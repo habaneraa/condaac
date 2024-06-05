@@ -1,0 +1,4 @@
+OptionList {
+    border: vkey transparent;
+    padding: 0 2;
+}

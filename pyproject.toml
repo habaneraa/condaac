@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "condaac"
+version = "0.1.0"
+description = "condaac is a CLI application that helps you to list and switch between your conda environments easily."
+authors = ["habaneraa"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+condaac-cli = "condaac.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+textual = "^0.64.0"
+typer = "^0.12.3"
+natsort = "^8.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
